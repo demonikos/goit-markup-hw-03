@@ -13,6 +13,43 @@ body {
     --action-color: #404BBF;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1470px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.section {
+    padding: 120px 0px;
+}
+
 .list {
     list-style-type: none;
 }
@@ -39,7 +76,28 @@ body {
     overflow: hidden;
 }
 
-/* -----Navigation----- */
+/* -----Header----- */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 24px 156px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+}
+
+.nav {
+    margin-right: 331px;
+}
 
 .nav-logo {
     font-family: 'Raleway', sans-serif;
@@ -52,7 +110,8 @@ body {
     text-decoration: none;
 }
 
-.nav-list>.nav-item.nav-link {
+.nav-list>.nav-item.nav-link,
+.address>.address-list>.address-item> {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -148,6 +207,8 @@ body {
 .hero {
     background-color: var(--dark-color);
 }
+
+
 
 .hero-title {
     width: 496px;
