@@ -80,7 +80,7 @@ button {
     height: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0;
+    margin: 0 auto;
     /* outline: 2px solid red; */
 }
 
@@ -171,6 +171,11 @@ button {
 
 /* -----Filter----- */
 
+.filter-section{
+    width: 1440px;
+    padding: 96px 0px 72px;
+}
+
 .filter>.filter-list>.filter-item>.filter-btn {
     /* the same as nav */
     font-family: inherit;
@@ -198,6 +203,8 @@ button {
 /* -----Gallery----- */
 .gallery-container {
     display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .gallery-list{
@@ -217,6 +224,9 @@ button {
     padding: 32px 0px;
     border: 0.5px solid var(--light-color);
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .gallery-title {
@@ -242,6 +252,12 @@ button {
     background-color: var(--dark-color);
 }
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
@@ -260,7 +276,6 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--light-color);
-    padding-bottom: 16px;
 }
 
 /* -----Hero----- */
@@ -371,7 +386,7 @@ button {
 }
 
 .we-doing-title {
-    width: 322px;
+
 }
 
 .we-doing-title,
@@ -414,5 +429,5 @@ button {
 }
 
 .team-title {
-    width: 162px;
+
 }
