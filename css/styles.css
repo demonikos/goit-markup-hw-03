@@ -93,7 +93,7 @@ button {
 
 .header-container {
     width: 1158px;
-    padding: 24px 156px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
