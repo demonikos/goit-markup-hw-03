@@ -212,16 +212,9 @@ button {
 /* -----Hero----- */
 
 .hero {
-    padding: 192px;
+    padding: 188px 0px;
     background-color: var(--dark-color);
-}
-
-.hero-container {
-    /* display: flex;
-    flex-direction: column;
-    padding: 192px 0px;
-    gap: 48px;
-    align-items: center; */
+    text-align: center;
 }
 
 .hero-title {
@@ -233,7 +226,7 @@ button {
     white-space: normal;
     color: var(--white-color);
     display: block;
-    margin-bottom: 48px;
+    margin: 0px auto 48px;
 }
 
 .hero-btn {
@@ -241,8 +234,6 @@ button {
     border: 0;
     padding: 16px 32px;
     min-width: 170px;
-    display: flex;
-    justify-content: center;
     background-color: var(--brand-color);
     color: var(--white-color);
 }
@@ -257,6 +248,10 @@ button {
 .advantages-item {
     width: calc((100% - 72px) / 4);
     flex-grow: 0;
+}
+
+.we-doing {
+    padding-top: 0;
 }
 
 .we-doing-list {
@@ -289,27 +284,27 @@ button {
     width: calc((100% - 72px) / 4);
 }
 
+.gallery {
+    padding-top: 96px;
+}
+
 .gallery-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* row-gap: 48px; */
     column-gap: 24px;
 }
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
     flex-grow: none;
-        margin-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .gallery-content {
-    padding: 32px 0px 32px 16px;
+    padding: 32px 16px;
     border: 0.5px solid var(--light-color);
     border-top: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .filter-btn {
