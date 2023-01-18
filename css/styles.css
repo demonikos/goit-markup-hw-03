@@ -57,8 +57,8 @@ button {
     color: currentColor;
 }
 
-.link:hover,
-.link:focus {
+.link:not(.nohover):hover,
+.link:not(.nohover):focus {
     color: var(--action-color)
 }
 
@@ -73,7 +73,7 @@ button {
 .btn:hover,
 .btn:focus {
     background-color: var(--action-color);
-    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .accent {
@@ -166,7 +166,6 @@ button {
 .nav {
     display: flex;
     align-items: center;
-    margin-right: 331px;
 }
 
 .nav-list {
@@ -179,6 +178,10 @@ button {
     color: var(--dark-color);
     display: block;
     padding: 24px 0px;
+}
+
+.address {
+    margin-left: auto;
 }
 
 .address-link {
@@ -238,6 +241,10 @@ button {
     color: var(--white-color);
 }
 
+/* .hero-btn:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+
 /* -----Sections----- */
 
 .advantages-list {
@@ -272,6 +279,7 @@ button {
     padding: 32px 16px;
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
 .team-list {
@@ -293,12 +301,13 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 24px;
+    row-gap:  48px;
 }
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
     flex-grow: none;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
 }
 
 .gallery-content {
@@ -323,4 +332,8 @@ button {
     border: 1px solid var(--accent-color);
     color: var(--brand-color);
     padding: 12px 24px;
+}
+
+.filter-btn:hover, .filter-btn:focus {
+color: var(--white-color);
 }
